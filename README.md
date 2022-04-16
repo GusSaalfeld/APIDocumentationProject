@@ -42,7 +42,7 @@ time=<TIME>">
 </script>
 ````
 
-### Sample returned forecast package 
+### Example of returned forecast package 
 ````javascript
 <div class="forecast">
   <div class="temperature">78</div>
