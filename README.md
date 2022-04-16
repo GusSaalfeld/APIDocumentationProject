@@ -1,7 +1,7 @@
 # GetMyWeather API Documentation
 
 ## Introduction
-The GetMyWeather API allows developers to embed microforecasts—i.e. a weather forecast for a specific location—into their websites. Calling the endpoint returns an HTML element. 
+The GetMyWeather API allows developers to embed microforecasts—i.e. a weather forecast for a specific location—into their websites. Calling the endpoint returns an HTML element. Developers can specify location, region size, and time. 
 
 ## Setting up the GetMyWeather API
 In order to use GetMyWeather, you must first:
@@ -19,7 +19,7 @@ new getWeather(document.getElementById('forecast')}
 ````
 
 ## Making a GetWeather request
-Returns weather forecast based on location, specificity, and time. Forecast returned as a div element.
+Returns weather forecast based on location, specificity (i.e. region size), and time. Forecast returned as a div element.
 EXPAND: SAY LOCATION CHOSEN BY LATITUDE & LONGITUDE, THEN SPECIFICITY TELLS YOU REGION SIZE. FINALLY, TIME for how far into the future.
 ### Parameters
 Parameters | Description
