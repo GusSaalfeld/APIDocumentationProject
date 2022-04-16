@@ -22,12 +22,12 @@ new getWeather(document.getElementById('forecast')}
 Returns weather forecast based on location, specificity, and time. Forecast returned as a div element.
 EXPAND: SAY LOCATION CHOSEN BY LATITUDE & LONGITUDE, THEN SPECIFICITY TELLS YOU REGION SIZE. FINALLY, TIME for how far into the future.
 ### Parameters
-Parameters | Description
+Parameters | Format
 ----------|-------------
-Latitude | **Format:** ISO 6709 (e.g. 50°40′46.461″N 95°48′26.533″W 123.45m)
-Longitude | **Format:** ISO 6709 (e.g. 50°03′46.461″S 125°48′26.533″E 978.90m)
-Specificity | **Format:** int
-Time | **Format:** double
+Latitude | ISO 6709 (e.g. 50°40′46.461″N 95°48′26.533″W 123.45m)
+Longitude | ISO 6709 (e.g. 50°03′46.461″S 125°48′26.533″E 978.90m)
+Specificity | int
+Time | double
 
 ### Using GetWeather Endpoint
 Add the following code to request the GetWeather endpoint:
