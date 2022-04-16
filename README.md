@@ -69,7 +69,7 @@ The following code will display the result package:
 ## Error messages
 If the API server cannot fulfill your request, you will get one of the following errors:
 
-Error Message | Description
+Error Message | Debug
 --------------|------------
 Invalid Key   | Check that your code's API key matches the one you registered for at https://www.getmyweather.com.
 Invalid parameter format | Check your input parameters conform to the appropriate format.
