@@ -55,10 +55,10 @@ time=<TIME>">
 ## Forecast return package
 Parameter | Description
 --------------|------------
-temperature | Predicted temperature, measured in farenheit. 
-windspeed | Predicted windspeed, measured in miles per hour. 
+temperature | Predicted in farenheit. 
+windspeed | Predicted in miles per hour. 
 chanceRain | Percent chance of rain. 
-trust | Represents the forecast's reliability. Ranges from 1 (low trust) to 100 (highly trustworthy). Inputting large specificity or time parameters make predictions less trustworthy. If trust is between 0 and 10, the forecast is based on the region's historical average, as live weather readings would be too inaccurate. 
+trust | The forecast's accuracy. Ranges from 1 (low trust) to 100 (highly trustworthy). Inputting large specificity or time parameters make predictions less trustworthy. If trust is between 0 and 10, the forecast is based on the region's historical average, as live weather readings would be too inaccurate. 
 
 ## Injecting result into your HTML page
 The following code will display the result package:
