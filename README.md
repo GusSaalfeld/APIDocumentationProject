@@ -1,11 +1,13 @@
 # GetMyWeather API Documentation
 
 ## Introduction
-The GetMyWeather API allows developers to embed microforecasts—i.e. a weather forecast for a specific location—into their websites. Calling the endpoint returns an HTML element. Developers can specify location, region size, and time. 
+The GetMyWeather API allows developers to embed microforecasts—i.e. a weather forecast for a specific location—into their websites. Calling the endpoint returns an HTML element. Developers can specify location, specificty (i.e. region size), and time. 
+### Visualizing how GetWeather works 
+![Visualizing GetWeather request](https://github.com/GusSaalfeld/APIDocumentationProject/blob/main/example.PNG)
 
 ## Setting up the GetMyWeather API
-In order to use GetMyWeather, you must first:
-1. Register for an API key at https://www.getmyweather.com. API keys are free for testing and development. If you expect large traffic, you will have to pay for a commercial key. Costs depends on usage; learn more at our website.
+To use GetMyWeather, you must first:
+1. Register for an API key at https://www.getmyweather.com. API keys are free for testing and development. If you expect large traffic, you will have to pay for a commercial key. Costs depends on usage; learn more on our website.
 2. The API runs off javascript. Make sure it is enabled on your browser. 
 
 ## Initializing GetWeather
@@ -19,15 +21,13 @@ new getWeather(document.getElementById('forecast')}
 ````
 
 ## Making a GetWeather request
-Returns weather forecast based on location, specificity (i.e. region size), and time. The forecast is returned as a div element. Latitude and longitude determine's the forecast's location. Specificity determines the size of the forecasted region—it represents the radius of a circle in meters, extending out from the original location. Time, measured in hours, determines how far into the future you wish to forecast. The larger the specifity or time parameters, the less accurate the forecast will be.   
-### Example
-![Visualizing GetWeather](example.png)
+Requesting GetWeather returns weather forecast based on location, specificity (i.e. region size), and time. The forecast is returned as a div element. Latitude and longitude determine's the forecast's location. Specificity determines the size of the forecasted region—it represents the radius of a circle, in meters, extending out from the original location. Time, measured in hours, determines how far into the future you wish to forecast. The larger the specifity or time parameters, the less accurate the forecast will be.   
 
 ### Parameters
 Parameters | Format
 ----------|-------------
-Latitude | ISO 6709 (e.g. 50°40′46.461″N 95°48′26.533″W 123.45m)
-Longitude |ISO 6709 (e.g. 50°03′46.461″S 125°48′26.533″E 978.90m)
+Latitude | [ISO 6709](https://en.wikipedia.org/wiki/ISO_6709) (e.g. 404536, -0735902.4)
+Longitude |[ISO 6709](https://en.wikipedia.org/wiki/ISO_6709) (e.g. 513625, -1547820.5)
 Specificity | int
 Time | double
 
@@ -75,5 +75,5 @@ Error Message | Debug
 --------------|------------
 Invalid Key   | Check that your code's API key matches the one you registered for at https://www.getmyweather.com.
 Invalid parameter format | Check your input parameters conform to the appropriate format.
-Parameter out of range | Check that your specifity parameter is no smaller than 10 meters, and no larger than 100,000 meters.
-Server unavailable | Check your internet connection ([click here](https://www.speedtest.net/)). Alternatively, GetMyWeather's API might be down for maintenance, which you can confirm by going to the [website](https://www.getmyweather.com). 
+Parameter out of range | Check that your specifity parameter is between 10 and 100,000 meters.
+Server unavailable | Check your internet connection ([click here](https://www.speedtest.net/)). Alternatively, GetMyWeather's API might be down for maintenance, which you can confirm by going to our [website](https://www.getmyweather.com). 
