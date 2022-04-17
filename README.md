@@ -20,6 +20,9 @@ new getWeather(document.getElementById('forecast')}
 
 ## Making a GetWeather request
 Returns weather forecast based on location, specificity (i.e. region size), and time. The forecast is returned as a div element. Latitude and longitude determine's the forecast's location. Specificity determines the size of the forecasted region—it represents the radius of a circle in meters, extending out from the original location. Time, measured in hours, determines how far into the future you wish to forecast. The larger the specifity or time parameters, the less accurate the forecast will be.   
+### Example
+![Visualizing GetWeather](example.png)
+
 ### Parameters
 Parameters | Format
 ----------|-------------
